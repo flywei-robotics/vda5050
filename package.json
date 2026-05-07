@@ -1,0 +1,55 @@
+{
+  "name": "@flywei/vda5050",
+  "version": "0.1.0",
+  "description": "VDA5050 v2.0.0 message validator and MQTT inspector — vendor-neutral utility for autonomous warehouse robotics",
+  "keywords": [
+    "vda5050",
+    "amr",
+    "agv",
+    "warehouse-automation",
+    "robotics",
+    "mqtt",
+    "validator",
+    "json-schema",
+    "fleet-management",
+    "autonomous-mobile-robot"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "vda5050": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "schemas",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --import tsx --test test/*.test.ts",
+    "lint": "tsc --noEmit",
+    "cli": "tsx src/cli.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flywei-robotics/vda5050.git"
+  },
+  "homepage": "https://github.com/flywei-robotics/vda5050",
+  "bugs": "https://github.com/flywei-robotics/vda5050/issues",
+  "author": "FlyWei Robotics <sales@flywei.co.uk> (https://flywei.co.uk)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "mqtt": "^5.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

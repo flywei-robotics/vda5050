@@ -1,0 +1,40 @@
+{
+  "headerId": 42,
+  "timestamp": "2026-05-07T12:00:00.000Z",
+  "version": "2.0.0",
+  "manufacturer": "FlyWei",
+  "serialNumber": "FW-AMR-001",
+  "orderId": "order-2026-05-07-0042",
+  "orderUpdateId": 0,
+  "lastNodeId": "node-A12",
+  "lastNodeSequenceId": 0,
+  "driving": true,
+  "operatingMode": "AUTOMATIC",
+  "nodeStates": [
+    {
+      "nodeId": "node-B07",
+      "sequenceId": 1,
+      "released": true,
+      "nodePosition": { "x": 12.4, "y": 8.7, "theta": 1.5708, "mapId": "warehouse-floor-1" }
+    }
+  ],
+  "edgeStates": [],
+  "actionStates": [
+    {
+      "actionId": "lift-pallet-001",
+      "actionType": "pick",
+      "actionStatus": "RUNNING"
+    }
+  ],
+  "batteryState": {
+    "batteryCharge": 87.4,
+    "batteryVoltage": 51.3,
+    "charging": false,
+    "reach": 4500
+  },
+  "errors": [],
+  "safetyState": {
+    "eStop": "NONE",
+    "fieldViolation": false
+  }
+}

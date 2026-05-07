@@ -1,0 +1,48 @@
+{
+  "headerId": 1,
+  "timestamp": "2026-05-07T12:00:00.000Z",
+  "version": "2.0.0",
+  "manufacturer": "FlyWei",
+  "serialNumber": "FW-FORKLIFT-003",
+  "orderId": "order-pick-A14-to-DOCK-7",
+  "orderUpdateId": 0,
+  "nodes": [
+    {
+      "nodeId": "A14",
+      "sequenceId": 0,
+      "released": true,
+      "nodePosition": { "x": 5.2, "y": 12.0, "theta": 0, "mapId": "warehouse-floor-1" },
+      "actions": [
+        {
+          "actionType": "pick",
+          "actionId": "pick-001",
+          "blockingType": "HARD",
+          "actionParameters": [
+            { "key": "loadId", "value": "pallet-CHEP-9912" },
+            { "key": "height", "value": 0.15 }
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "DOCK-7",
+      "sequenceId": 2,
+      "released": true,
+      "nodePosition": { "x": 42.0, "y": 1.5, "theta": 3.1416, "mapId": "warehouse-floor-1" },
+      "actions": [
+        { "actionType": "drop", "actionId": "drop-001", "blockingType": "HARD" }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "edgeId": "edge-A14-DOCK7",
+      "sequenceId": 1,
+      "released": true,
+      "startNodeId": "A14",
+      "endNodeId": "DOCK-7",
+      "maxSpeed": 1.5,
+      "actions": []
+    }
+  ]
+}
